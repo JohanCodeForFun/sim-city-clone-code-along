@@ -18,6 +18,10 @@
 
     window.onload = () => {
       window.scene = createScene();
+
+      window.addEventListener('mousedown', window.scene.onMouseDown, false)
+      window.addEventListener('mouseup', window.scene.onMouseUp, false)
+      window.addEventListener('mousemove', window.scene.onMouseMove, false)
       window.scene.start();
     }
   </script>
